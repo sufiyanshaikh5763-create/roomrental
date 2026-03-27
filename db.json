@@ -1,0 +1,98 @@
+{
+  "rooms": [
+    {
+      "id": "r1",
+      "number": "101",
+      "capacity": 4,
+      "occupancy": 4,
+      "rent": 5000,
+      "status": "Full"
+    },
+    {
+      "id": "r2",
+      "number": "102",
+      "capacity": 2,
+      "occupancy": 2,
+      "rent": 7000,
+      "status": "Full"
+    },
+    {
+      "id": "r3",
+      "number": "103",
+      "capacity": 3,
+      "occupancy": 1,
+      "rent": 6000,
+      "status": "Available"
+    },
+    {
+      "id": "r4",
+      "number": "104",
+      "capacity": 4,
+      "occupancy": 4,
+      "rent": 4500,
+      "status": "Full"
+    }
+  ],
+  "tenants": [
+    {
+      "id": "t1",
+      "name": "Rahul Sharma",
+      "phone": "9876543210",
+      "roomId": "r1",
+      "joinDate": "2024-01-05",
+      "rent": 5000
+    },
+    {
+      "id": "t2",
+      "name": "Priya Patel",
+      "phone": "9123456789",
+      "roomId": "r1",
+      "joinDate": "2024-02-10",
+      "rent": 5000
+    },
+    {
+      "id": "t3",
+      "name": "Amit Singh",
+      "phone": "9988776655",
+      "roomId": "r2",
+      "joinDate": "2024-01-15",
+      "rent": 7000
+    },
+    {
+      "id": "t4",
+      "name": "Sunita Rao",
+      "phone": "9001122334",
+      "roomId": "r3",
+      "joinDate": "2024-03-01",
+      "rent": 6000
+    },
+    {
+      "id": "_oofrm8t5p",
+      "name": "sufiyan shaikh",
+      "phone": "+919307855763",
+      "roomId": "r1",
+      "joinDate": "2026-03-12",
+      "rent": 3000
+    }
+  ],
+  "payments": [
+    {
+      "id": "p1",
+      "tenantId": "t1",
+      "amount": 5000,
+      "date": "2026-03-01",
+      "nextDue": "2026-04-01",
+      "method": "Cash",
+      "status": "Paid"
+    },
+    {
+      "id": "p2",
+      "tenantId": "t3",
+      "amount": 7000,
+      "date": "2026-03-01",
+      "nextDue": "2026-04-01",
+      "method": "UPI",
+      "status": "Paid"
+    }
+  ]
+}
