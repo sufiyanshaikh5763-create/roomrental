@@ -14,13 +14,7 @@ const sessions = new Map();
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-const pool = mysql.createPool({
-  host: process.env.DB_HOST || "localhost",
-  user: process.env.DB_USER || "rentflow",
-  password: process.env.DB_PASS || "rentflow123",
-  database: process.env.DB_NAME || "rentflow",
-  waitForConnections: true, connectionLimit: 10, queueLimit: 0
-});
+const pool = mysql.createPool(process.env.MYSQL_URL);
 
 async function initDb() {
   const conn = await pool.getConnection();
